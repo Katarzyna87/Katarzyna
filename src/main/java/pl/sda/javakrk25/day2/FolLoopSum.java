@@ -11,7 +11,7 @@ public class FolLoopSum {
         for (int i = 0; i < 3; ++i) {
             System.out.println(String.format("Podaj %d. liczbę:", (i + 1)));
             sum += scanner.nextInt();
-        }
+        }//*TEST - CHanges//*test changes
         System.out.println("Suma liczb podanych przez użytkownika:" + sum);
     }
 }
