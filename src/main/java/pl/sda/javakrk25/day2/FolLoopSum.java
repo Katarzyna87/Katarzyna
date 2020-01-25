@@ -14,4 +14,4 @@ public class FolLoopSum {
         }//*TEST - CHanges//*test changes
         System.out.println("Suma liczb podanych przez użytkownika:" + sum);
     }
-}
+}//commit commit
