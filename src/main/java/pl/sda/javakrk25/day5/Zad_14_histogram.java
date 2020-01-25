@@ -3,6 +3,7 @@ package pl.sda.javakrk25.day5;
 import java.util.Random;
 
 public class Zad_14_histogram {
+    //stworzyc program ktory generuje histoogram z losowych liczb
 
     public static void main(String[] args) {
         int[] histogram = new int[10];
