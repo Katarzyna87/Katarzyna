@@ -5,10 +5,16 @@ import java.util.Random;
 public class Zad_14_histogram {
     //stworzyc program ktory generuje histoogram z losowych liczb
 
+    /**
+     * Stwórz program który generuje historgram z losowych liczb
+     * test changes - master222
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         int[] histogram = new int[10];
         Random random = new Random();
-
+        //other comment
         for (int i = 0; i < 1_000_000; i++) {
             int randomNumber = random.nextInt(10);
             histogram[randomNumber]++;
@@ -17,5 +23,7 @@ public class Zad_14_histogram {
         for (int i = 0; i < histogram.length; i++) {
             System.out.println(String.format("%d -> %d", i, histogram[i]));
         }
+
+        //additional sth
     }
 }
