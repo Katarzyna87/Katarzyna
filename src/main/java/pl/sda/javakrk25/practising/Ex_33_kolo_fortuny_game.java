@@ -17,7 +17,9 @@ public class Ex_33_kolo_fortuny_game {
         String text = "stokrotka";
 
         do {
-            show(userGuess, text);
+            if (show(userGuess, text)) {
+                break;
+            }
             userInput = ScannerUtil.readUserInput();
             if (userInput.length() == 1) {
                 userGuess.add(userInput.charAt(0));
@@ -26,15 +28,18 @@ public class Ex_33_kolo_fortuny_game {
         System.out.println("Congrats you win nothing");
     }
 
-    public static void show(Set<Character> userGuess, String text) {
+    public static boolean show(Set<Character> userGuess, String text) {
+        boolean isAnyCharUrevealed = false;
         for (char c : text.toCharArray()) {
             if (userGuess.contains(c)) {
                 System.out.print(c);
             } else {
+                isAnyCharUrevealed = true;
                 System.out.print("_");
             }
             System.out.print(" ");
         }
         System.out.println();
+        return !isAnyCharUrevealed;
     }
 }
